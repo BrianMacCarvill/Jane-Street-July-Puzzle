@@ -24,7 +24,7 @@ f(S) =
 \end{cases}
 $$
 
-*Explain the reasoning and why it's wrong*
+This is incorrect
 
 I thought the case $a=S$ completely irrelavant because $S$ a uniform distrabution of all the real numbers between 1 and 2, so the chance of picking any one partular number is 0 and so that situation does not affect the cost.
 
@@ -42,7 +42,7 @@ S^2, & \text{if } S < a \\
 \end{cases}
 $$
 
-by basially saying if the car is travelling at a speed *S* and it has to slow down to a speed *a* (*a* can be $0$ as well for this thought experiment) then that takes 2(S-a) time and on average you're $\frac{(S-a)}{2}$ below your top speed, so you just multiple those numbers together.
+by saying if the car is travelling at a speed *S* and it has to slow down to a speed *a* (*a* can be $0$ as well for this thought experiment) then that takes 2(S-a) time and on average you're $\frac{(S-a)}{2}$ below your top speed, so you just multiple those numbers together.
 
 The second realisation was that faster cars are only ever going to catch up to your car from behind and slower cars are only going to get caught by faster cars. However they are not all caught at the same rate. For example, if you're going at 1.5 miles/min and 2 cars travelling at 1.75 miles/min and 2 miles/min respectively, and they start their journeys $n$ and $2n$ meters behind you, then they will reach you at the same time.
 
@@ -63,7 +63,7 @@ f(S) =
 \end{cases}
 $$
 
-# PDF rabbit hole
+# Rabbit hole
 
 This is when I go down a bit of a rabbit hole because I basically took this as a probability density function and of course for a probability density function $f(x)$ $$\int_{-\infty}^\infty f(x)dx = 1$$ must be true, so obviously I thought.
 
@@ -84,13 +84,13 @@ find the value of a such that
 
 $$\frac{d\text{Expected Loss}}{da}=0$$
 
-then I asked chatgpt to solve this.
+So I plugged this into an [integration calculator](https://www.integral-calculator.com/) and got some non-sense answer.
 
 # Getting back on track 
 
-Then I realised, kinda after figuring out that they really don't need to be a pdf, and infact there is the property that cars travelling very fast and very slow are much more likely to be hit.
+Then I realised, after realising that they really don't need to be a pdf that integrates to 1 and infact there is the property that cars travelling very fast and very slow are much more likely to be hit.
 
-The area under the curve can be calculated as 
+The area under the curve of $|a-S| can be calculated as 
 
 $$A(x) = s^2 - 3s + \frac{5}{2}$$
 
@@ -130,6 +130,12 @@ then from solving the equations in the pdf rabbit hole, I could infer that we ca
 to get the equation
 
 $$\int_{1}^{a}S^2(a-S)ds -\int_{a}^2(2-S)^2(S-a)ds = 0$$
+
+$$\frac{a^4-4a+3}{12} = \frac{a^4-8a^3+24a^2-32a+16}{12}$$
+
+$$8a^3-24a^2+28a-13 = 0$$
+
+$$a \approx 1.2266988258$$
 
 $$\frac{a^4-4a+3}{12} = \frac{a^4-8a^3+24a^2-32a+16}{12}$$
 
