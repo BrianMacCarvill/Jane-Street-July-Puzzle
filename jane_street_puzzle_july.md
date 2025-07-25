@@ -50,7 +50,7 @@ This is the same in the other direction, a car travelling at 1.5 miles/min will 
 
 I foramised this into to a (kinda) desity function of cars that are represented on our journey
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ![Animated Function](animated_function.gif)
 
