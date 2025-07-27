@@ -132,3 +132,5 @@ $$\frac{a^4-4a+3}{12} = \frac{a^4-8a^3+24a^2-32a+16}{12}$$
 $$8a^3-24a^2+28a-13 = 0$$
 
 $$a \approx 1.2266988258$$
+
+Edit: I submitted my result and it was not accepted, I will make a follow up document in August.
