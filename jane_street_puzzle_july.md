@@ -44,7 +44,7 @@ The second realisation was that faster cars are only ever going to catch up to y
 
 This is the same in the other direction, a car travelling at 1.5 miles/min will catch up to a car travelling at 1 mile/min twice as fast as a car travelling at 1.25 miles/min.
 
-I foramised this into to a (kinda) desity function of cars that are represented on our journey
+I formalised this into to a (kinda) desity function of cars that are represented on our journey
 
 ![alt text](image-1.png)
 
@@ -61,7 +61,7 @@ $$
 
 # Rabbit hole
 
-This is when I go down a bit of a rabbit hole because I took this as a probability density function and of course for a probability density function $f(x)$ $$\int_{-\infty}^\infty f(x)dx = 1$$ must be true, so obviously I thought.
+This is when I go down a bit of a rabbit hole because I took this $f(S)$ as a probability density function and of course for a probability density function $f(x)$ $$\int_{-\infty}^\infty f(x)dx = 1$$ must be true, so I thought we needed to find:
 
 $$\text{Expected Loss} = \int_{1}^{2}L[S|a]dS$$
 
