@@ -26,7 +26,7 @@ $$
 
 I thought the case $a=S$ completely irrelavant because $S$ a uniform distrabution of all the real numbers between 1 and 2, so the chance of picking any one partular number is 0 and so that situation does not affect the cost.
 
-This is obviously incorrect (as shown in the second example of the second paragraph), let this be an example to read the question more thoroughly.
+This is obviously incorrect (as shown in the second example of the second paragraph of the question), let this be an example to read the question more thoroughly.
 
 I would later (while doing something completely different) find the loss function to be 
 
