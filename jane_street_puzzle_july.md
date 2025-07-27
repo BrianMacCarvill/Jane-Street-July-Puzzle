@@ -2,7 +2,7 @@
 
 Before reading this, please read the puzzle linked here https://www.janestreet.com/puzzles/current-puzzle/.
 
-I have an undergraduate degree in math and a masters in stats, the goal of this write-up is to give an unfiltered understanding of my thought proccess when doing difficult problems.
+The goal of this write-up is to give an unfiltered understanding of my thought proccess when doing difficult problems.
 
 The first think I did was calculate the loss of the of a car by saying that if we have a threshold *a*, then if a car is travelling at a speed of *S* and it meets a faster car in the same lane then the loss is:
 
