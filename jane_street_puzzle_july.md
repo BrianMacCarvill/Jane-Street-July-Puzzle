@@ -2,7 +2,7 @@
 
 Before reading this, please read the puzzle linked here https://www.janestreet.com/puzzles/current-puzzle/.
 
-The goal of this write-up is to give an unfiltered understanding of my thought proccess when doing difficult problems.
+The goal of this write-up is to give an sincere understanding of my thought proccess when doing difficult problems.
 
 The first think I did was calculate the loss of the of a car by saying that if we have a threshold *a*, then if a car is travelling at a speed of *S* and it meets a faster car in the same lane then the loss is:
 
@@ -27,8 +27,6 @@ $$
 I thought the case $a=S$ completely irrelavant because $S$ a uniform distrabution of all the real numbers between 1 and 2, so the chance of picking any one partular number is 0 and so that situation does not affect the cost.
 
 This is obviously incorrect (as shown in the second example of the second paragraph), let this be an example to read the question more thoroughly.
-
-
 
 I would later (while doing something completely different) find the loss function to be 
 
@@ -63,7 +61,7 @@ $$
 
 # Rabbit hole
 
-This is when I go down a bit of a rabbit hole because I basically took this as a probability density function and of course for a probability density function $f(x)$ $$\int_{-\infty}^\infty f(x)dx = 1$$ must be true, so obviously I thought.
+This is when I go down a bit of a rabbit hole because I took this as a probability density function and of course for a probability density function $f(x)$ $$\int_{-\infty}^\infty f(x)dx = 1$$ must be true, so obviously I thought.
 
 $$\text{Expected Loss} = \int_{1}^{2}L[S|a]dS$$
 
@@ -78,9 +76,9 @@ $$
 \end{cases}
 $$
 
-find the value of a such that 
+The denominator is the area under the curve for $|x-s|$ between 1 and 2.
 
-$$\frac{d\text{Expected Loss}}{da}=0$$
+Then of course we need to minimise the loss by finding were: $\frac{d\text{Expected Loss}}{da}=0$.
 
 So I plugged this into an [integration calculator](https://www.integral-calculator.com/) and got some non-sense answer.
 
@@ -112,9 +110,9 @@ $$
 \end{cases}
 $$
 
-so I split it into 
-
 (this loss function only considers the loss of each car and not the time it takes away from other cars, I thought that this was fine because the expected loss of time over every car is the same as the expected loss that each car takes away from eachother)
+
+so I split it into 
 
 $$ EL(a) = \int_a^2   \frac{1}{2}(2-S)^2(S-a)^2 ds + \int_1^a \frac{1}{2}(S)^2(a-S)^2 ds$$
 
@@ -125,15 +123,9 @@ $$\frac{dEL(a)}{da} = 0$$
 $$\frac{d\int_a^2   \frac{1}{2}(2-S)^2(S-a)^2 ds}{da} + \frac{d\int_1^a \frac{1}{2}(S)^2(a-S)^2 ds}{da} = 0$$
 
 then from solving the equations in the pdf rabbit hole, I could infer that we can employ the [Leibniz integral rule](https://en.wikipedia.org/wiki/Leibniz_integral_rule)
-to get the equation
+to get the equation to get:
 
 $$\int_{1}^{a}S^2(a-S)ds -\int_{a}^2(2-S)^2(S-a)ds = 0$$
-
-$$\frac{a^4-4a+3}{12} = \frac{a^4-8a^3+24a^2-32a+16}{12}$$
-
-$$8a^3-24a^2+28a-13 = 0$$
-
-$$a \approx 1.2266988258$$
 
 $$\frac{a^4-4a+3}{12} = \frac{a^4-8a^3+24a^2-32a+16}{12}$$
 
