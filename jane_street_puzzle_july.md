@@ -133,4 +133,8 @@ $$8a^3-24a^2+28a-13 = 0$$
 
 $$a \approx 1.2266988258$$
 
-Edit: I submitted my result and it was not accepted, I will make a follow up document in August.
+# Why it's wrong
+
+The reason that this is wrong is because I did not read the question well enough. 
+
+In the line "Say car trips arrive at a rate of z car trip beginnings per mile per minute, uniformly across the infinite highway" I miss read it to mean that the cars spawn via a __uniform distrabution__ at a rate and density of 1 per mile per minute instead of what it actually said which was that the cars spawn across the infinite highway __uniformly__. This lead to me getting an answer to the wrong question.
